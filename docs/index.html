@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+    </style>
+</head>
+<body>
+
+    <p>tup tup tup</p>
+    
+    
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.min.js"></script>
+
+    <script src="touch.js"></script>
+
+    <script>
+
+        $('p').draggable();
+
+        document.querySelector('p').addEventListener('touchstart', f);
+        document.querySelector('p').addEventListener('touchend', f);
+        document.querySelector('p').addEventListener('touchmove', f);
+        document.querySelector('p').addEventListener('touchcancel', f);
+
+
+
+        function f(e) {
+            console.log(e.touches, e.type);
+        }
+       
+    </script>
+</body>
+</html>
